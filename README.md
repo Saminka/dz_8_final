@@ -1,1 +1,1 @@
-# goit-markup-hw-03
+@media (min-width: 480px)

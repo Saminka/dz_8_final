@@ -12,6 +12,10 @@
   display: flex;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 480px) {
+    display: none;
+  }
 }
 
 .nav-item:not(:last-child) {
@@ -28,6 +32,10 @@ nav .link {
   display: flex;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 480px) {
+    display: none;
+  }
 }
 
 .address-list .link + .link {

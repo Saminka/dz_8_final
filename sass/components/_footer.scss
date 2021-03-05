@@ -4,8 +4,10 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .footer {
@@ -28,6 +30,15 @@
     letter-spacing: 0.03em;
     color: $font-color-light;
     margin-bottom: 9px;
+
+    @media (min-width: 480px) {
+      width: 480px;
+      padding-left: 124px;
+      padding-right: 124px;
+      text-align: center;
+      white-space: pre;
+      margin-right: 0;
+    }
   }
 
   .footer-box-contact {
@@ -44,15 +55,28 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: white;
+
+    @media (min-width: 480px) {
+      margin-top: 60px;
+      padding-left: 145px;
+    }
   }
 
   .footer-box {
     display: flex;
     align-items: baseline;
 
+    @media (min-width: 480px) {
+      display: block;
+    }
+
     & ul {
       list-style: none;
       padding-left: 0;
+
+      @media (min-width: 480px) {
+        list-style: none;
+      }
     }
   }
 }
@@ -67,16 +91,33 @@
   color: $font-color-light;
   display: inline-block;
   margin-bottom: 20px;
+
+  @media (min-width: 480px) {
+    font-size: 24px;
+    margin: 60px 163px 20px 163px;
+    text-decoration: none;
+  }
 }
 
 .footer-icon {
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0;
+
+  @media (min-width: 480px) {
+    display: inline-flex;
+
+    padding: 0;
+    padding-left: 125px;
+  }
 }
 
 .footer-box-link {
   margin-right: 99px;
+
+  @media (min-width: 480px) {
+    margin-right: 0;
+  }
 }
 
 .footer-box-subscribe {
@@ -109,6 +150,10 @@
   margin-top: 20px;
   border-radius: 4px;
   color: #ffffff;
+
+  @media (min-width: 480px) {
+    min-width: 450px;
+  }
 }
 
 .footer-action-img {
@@ -117,6 +162,13 @@
   height: 50px;
 
   margin-left: 12px;
+
+  @media (min-width: 480px) {
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 123px;
+    margin-right: 140px;
+  }
 }
 
 .footer-action-img::after {
@@ -139,6 +191,13 @@
 .footer-contacts-list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 480px) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-accent {
