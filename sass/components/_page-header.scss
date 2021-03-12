@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
     width: 480px;
     margin: 0;
   }
@@ -17,38 +17,38 @@ header {
   background-color: #ffffff;
   z-index: 3;
 
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
     width: 480px;
   }
 }
 
 .menu-button {
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
     display: inline-flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
   }
-  @media (min-width: 763px) {
+  @media (max-width: 763px) {
     display: none;
   }
 }
 
 .menu-button .icon-close {
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
     display: none;
   }
 }
 
 .menu-button.is-open .icon-close {
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
     display: block;
   }
 }
 
 .menu-button.is-open .icon-menu {
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
     display: none;
   }
 }
