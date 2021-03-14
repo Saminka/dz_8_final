@@ -17,13 +17,13 @@ header {
   background-color: #ffffff;
   z-index: 3;
 
-  @media (max-width: 480px) {
+  @media (min-width: 480px) {
     width: 480px;
   }
 }
 
 .menu-button {
-  @media (max-width: 480px) {
+  @media (min-width: 480px) {
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ header {
 }
 
 .menu-button.is-open .icon-menu {
-  @media (max-width: 480px) {
+  @media (min-width: 480px) {
     display: none;
   }
 }
