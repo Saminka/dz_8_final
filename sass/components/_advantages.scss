@@ -8,8 +8,9 @@
     width: 480px;
   }
 
-  @media screen and (min-width: 763px) {
-    width: 763px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 1600px) {
@@ -58,12 +59,23 @@
 }
 
 .advantages-list {
-  list-style: none;
-  padding-left: 0;
-
   padding: 0;
   margin: 0;
   list-style: none;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: -5px;
+  }
+
+}
+
+.advantages-item {
+  @media screen and (min-width: 768px) {
+    width: calc((100%-2*15px)/2);
+    margin: 5px;
+  }
 }
 
 // .advantages-section {
