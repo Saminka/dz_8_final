@@ -26,10 +26,7 @@
     display: none;
 }
 
-header .link {
-  
-  min-height: 80px;
-}
+
 
 .header a:visited {
   font-weight: 500;
@@ -55,9 +52,9 @@ header .link {
 
   padding: 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: 40px;
 
-  background-color: palegoldenrod;
+  background-color: #ffffff;
 
   
 
@@ -65,8 +62,10 @@ header .link {
       display: none;
       position: absolute;
         top: 100%;
-        left: 0%;
-        width: 100%;
+            left: 2%;
+    right: 2%;
+        max-width: 480px;
+            padding: 48px 40px;
 
         &.is-open {
       display: block;
@@ -89,6 +88,12 @@ header .link {
   list-style: none;
 }
 
+.navigation-mobile {
+      width: 80px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
 
 
 
@@ -100,4 +105,46 @@ header .link {
     background-color: transparent;
     border: none;
     padding: 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.nav-item {
+  padding: 0;
+}
+
+
+.header__social-divider {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 22px;
+    border-left: 2px solid rgba(33,33,33,0.2);
+}
+
+.address-list {
+  flex-direction: column;
+  text-align: left;
+}
+
+.contacts-mobile .contacts-font-first {
+  font-weight: 500;
+font-size: 34px;
+line-height: 0.0025;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+}
+
+.contacts-mobile svg {
+  @media screen and (max-width: 767px) {
+    display: none;
+    
+  }
+}
+
+.contacts-mobile {
+  margin-bottom: 64px;
 }
