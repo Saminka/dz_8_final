@@ -74,15 +74,30 @@
 @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap; 
-    margin: -5px;
+    
   }
 
 }
 
+
+
+
 .advantages-item {
   @media screen and (min-width: 768px) {
-    width: calc((100%-2*15px)/2);
-    margin: 5px;
+    width: 354px;
+    
+  }
+}
+
+ .item-one {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.item-three {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
   }
 }
 

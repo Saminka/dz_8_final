@@ -349,9 +349,11 @@ nav .link {
   }
 }
 
-@media (min-width: 763px) {
+@media (min-width: 768px) {
   .footer-container {
-    width: 763px;
+    width: 768px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -398,6 +400,12 @@ nav .link {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-box-contact {
+    margin: 0;
+  }
 }
 
 .footer-title {
@@ -562,6 +570,7 @@ footer h2 {
 }
 
 .foter-box-link {
+  width: 206px;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -575,8 +584,20 @@ footer h2 {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .foter-box-link {
+    margin-right: 80px;
+  }
+}
+
 .footer-box-subscribe {
   margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-box-subscribe {
+    text-align: center;
+  }
 }
 
 .team-container {
@@ -589,7 +610,7 @@ footer h2 {
 .team-section {
   background-color: #f5f4fa;
   margin: 0;
-  width: 480px;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -741,6 +762,17 @@ footer h2 {
   display: grid;
 }
 
+@media (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+}
+
 .team-list img {
   width: 450px;
 }
@@ -757,6 +789,13 @@ footer h2 {
 
 .team-list .item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .team-list .item {
+    width: calc((100% - 4 * 30px) / 2);
+    margin: 30px;
+  }
 }
 
 .advantages-container {
@@ -849,14 +888,24 @@ footer h2 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -5px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .advantages-item {
-    width: calc((100%-2*15px)/2);
-    margin: 5px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-one {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-three {
+    margin-right: 30px;
   }
 }
 
@@ -928,6 +977,13 @@ footer h2 {
 .clients-item {
   width: 210px;
   height: 90px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    margin: 15px;
+    width: calc((100% - 3 * 30px) /3);
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {

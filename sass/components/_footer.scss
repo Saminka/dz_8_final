@@ -13,8 +13,9 @@
     flex-direction: column;
   }
 
-  @media (min-width: 763px) {
-    width: 763px;
+  @media (min-width: 768px) {
+    width: 768px;
+    justify-content: space-around;
   }
 
   @media (min-width: 1600px) {
@@ -56,6 +57,12 @@
   flex-direction: column;
 
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    
+    
+  }
 }
 
 .footer-title {
@@ -212,6 +219,7 @@ footer h2 {
 }
 
 .foter-box-link {
+  width: 206px;
   display: inline-block;
 
   align-items: center;
@@ -219,6 +227,14 @@ footer h2 {
   justify-content: center;
 
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+        
+   
+    margin-right: 80px;
+    
+    
+  }
   
 }
 
@@ -324,6 +340,11 @@ footer h2 {
 
 .footer-box-subscribe {
 margin-top: 60px;
+
+@media  screen and (min-width: 768px) {
+  
+  text-align: center;
+}
 }
 
 // .footer-subcribe-heading {
