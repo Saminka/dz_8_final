@@ -81,18 +81,16 @@ header .link {
   }
 }
 
-.navigation-mobile, .contacts-mobile {
-    height: 50px;
-    width: 140px;
+.nav-list-mobile {
+  list-style: none;
 }
 
-.navigation-mobile {
-border: 1px solid green;
+.address-list-mobile {
+  list-style: none;
 }
 
-.contacts-mobile {
- border: 1px solid orange;  
-}
+
+
 
 .menu-icon {
       position: relative;
