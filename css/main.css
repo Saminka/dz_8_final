@@ -63,11 +63,25 @@ h2 {
           justify-content: space-between;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .header .all-container {
     width: 480px;
     height: 60px;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .all-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -164,6 +178,14 @@ header .link {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -215,9 +237,21 @@ nav .link {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .address-email {
+    margin-right: 48px;
+  }
+}
+
 .contacts-font-two {
   color: #757575;
   font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-font-two {
+    font-size: 12px;
+  }
 }
 
 .nav-underline {
@@ -276,6 +310,12 @@ nav .link {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .header__social-block {
+    display: none;
+  }
 }
 
 .header__social-link {
@@ -1408,6 +1448,12 @@ form .modal-open-btn {
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 767px) {
+  .menu-container {
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-container {
     display: -webkit-box;
@@ -1422,22 +1468,48 @@ form .modal-open-btn {
   }
 }
 
-.nav-list-mobile {
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: transparent;
+    font-size: 14px;
+  }
+}
+
+.menu-container .nav-list-mobile {
   list-style: none;
 }
 
-.address-list-mobile {
+.menu-container .address-list-mobile {
   list-style: none;
 }
 
-.navigation-mobile {
+.menu-container .navigation-mobile {
   width: 80px;
   padding: 0;
   margin: 0;
   text-align: left;
 }
 
-.menu-icon {
+@media screen and (min-width: 768px) {
+  .menu-container .navigation-mobile {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.menu-container .menu-icon {
   position: relative;
   z-index: 3;
   width: 21px;
@@ -1447,15 +1519,15 @@ form .modal-open-btn {
   padding: 0;
 }
 
-.nav-item:not(:last-child) {
+.menu-container .nav-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.nav-item {
+.menu-container .nav-item {
   padding: 0;
 }
 
-.header__social-divider {
+.menu-container .header__social-divider {
   display: block;
   margin-left: 10px;
   margin-right: 10px;
@@ -1463,7 +1535,7 @@ form .modal-open-btn {
   border-left: 2px solid rgba(33, 33, 33, 0.2);
 }
 
-.address-list {
+.menu-container .address-list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1471,21 +1543,26 @@ form .modal-open-btn {
   text-align: left;
 }
 
-.contacts-mobile .contacts-font-first {
+.menu-container .contacts-mobile .contacts-font-first {
   font-weight: 500;
   font-size: 34px;
   line-height: 0.0025;
-  /* identical to box height */
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container .contacts-mobile .contacts-font-first {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 767px) {
-  .contacts-mobile svg {
+  .menu-container .contacts-mobile svg {
     display: none;
   }
 }
 
-.contacts-mobile {
+.menu-container .contacts-mobile {
   margin-bottom: 64px;
 }
 /*# sourceMappingURL=main.css.map */

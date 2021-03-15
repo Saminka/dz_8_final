@@ -49,14 +49,10 @@
 
 
 .menu-container {
-
   padding: 20px;
   text-align: center;
   font-size: 40px;
-
   background-color: #ffffff;
-
-  
 
   @media screen and (max-width: 767px) {
       display: none;
@@ -70,6 +66,10 @@
         &.is-open {
       display: block;
   }
+
+  @media screen and (min-width: 767px) {
+      font-size: 14px;
+  }
   }
 
   @media screen and (min-width: 768px)  {
@@ -78,6 +78,12 @@
       flex-grow: 1;
 
   }
+
+  @media screen and (min-width: 768px) {
+        display: flex;
+    flex-direction: row;
+    background-color: transparent;
+     font-size: 14px;
 }
 
 .nav-list-mobile {
@@ -93,6 +99,11 @@
     padding: 0;
     margin: 0;
     text-align: left;
+
+    @media screen and (min-width: 768px) {
+      display: inline-flex;
+    flex-direction: column-reverse;
+    }
 }
 
 
@@ -133,9 +144,12 @@
   font-weight: 500;
 font-size: 34px;
 line-height: 0.0025;
-/* identical to box height */
-
 letter-spacing: 0.02em;
+
+@media screen and (min-width: 768px) {
+   font-size: 12px; 
+    
+  }
 }
 
 .contacts-mobile svg {
@@ -147,4 +161,4 @@ letter-spacing: 0.02em;
 
 .contacts-mobile {
   margin-bottom: 64px;
-}
+}}

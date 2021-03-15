@@ -4,11 +4,21 @@
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 480px) {
+  @media (min-width: 480px) {
     width: 480px;
     height: 60px;
     margin: 0;
   }
+
+  @media screen and (min-width: 768px) {
+
+   
+    display: flex;
+  
+    justify-content: space-between;
+  
+    align-items: center;
+}
 }
 
 header {
