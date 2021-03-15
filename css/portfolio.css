@@ -8,7 +8,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80px;
+  height: 60px;
 }
 
 .nav-list {
@@ -144,25 +144,24 @@ nav .link {
 
 .header .all-container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 480px) {
   .header .all-container {
-    width: 100%;
+    width: 480px;
+    height: 60px;
     margin: 0;
   }
 }
 
 header {
-  position: fixed;
   width: 100%;
-  min-height: 80px;
   top: 0;
   left: 0;
   background-color: #ffffff;
@@ -171,12 +170,24 @@ header {
 
 @media (min-width: 480px) {
   header {
-    width: 100%;
+    width: 480px;
   }
 }
 
+.header-area {
+  display: inline-block;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
 header .link {
-  padding: 32px 0;
+  padding-top: 23px;
   min-height: 80px;
 }
 
@@ -205,11 +216,10 @@ header .link {
   font-family: "Raleway";
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: black;
-  margin-right: 90px;
 }
 
 .logo-accent {
@@ -473,11 +483,21 @@ button:focus {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-container {
-    width: 480px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -494,8 +514,6 @@ button:focus {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -512,15 +530,30 @@ button:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 9px;
-  padding-left: 124px;
-  padding-right: 124px;
   text-align: center;
   white-space: pre;
   margin-right: 0;
 }
 
+.footer-box-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
 .footer-title {
+  margin: 0;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
@@ -529,8 +562,7 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: white;
-  margin-top: 60px;
-  padding-left: 145px;
+  text-align: center;
 }
 
 .footer-box ul {
@@ -553,7 +585,17 @@ button:focus {
 
 .footer-icon {
   padding: 0;
+  margin: 0;
   padding-left: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-subcribe-heading {
@@ -570,16 +612,19 @@ button:focus {
 }
 
 .btn-footer {
-  min-width: 450px;
-  min-height: 50px;
-  background-color: transparent;
+  max-width: 450px;
+  width: 100%;
+  padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 16px;
-  margin-top: 20px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  color: #ffffff;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25px;
 }
 
 .footer-action-img {
@@ -618,7 +663,7 @@ button:focus {
 }
 
 .contacts-font {
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
 }
 
@@ -658,11 +703,31 @@ footer h2 {
   line-height: 0.875;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .footer-contacts-item {
   margin-bottom: 9px;
+}
+
+.foter-box-link {
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-box-subscribe {
+  margin-top: 60px;
 }
 /*# sourceMappingURL=portfolio.css.map */

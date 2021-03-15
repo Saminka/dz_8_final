@@ -3,9 +3,14 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @media (min-width: 480px) {
-    width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
 
   @media (min-width: 763px) {
@@ -18,9 +23,6 @@
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background-color: #2f303a;
 
   & li a:hover,
@@ -37,15 +39,27 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $font-color-light;
-  margin-bottom: 9px;
-  padding-left: 124px;
-  padding-right: 124px;
+
+ 
   text-align: center;
   white-space: pre;
   margin-right: 0;
 }
 
+.footer-box-contact {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  margin-bottom: 60px;
+}
+
 .footer-title {
+  margin: 0;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 500;
@@ -54,8 +68,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: white;
-  margin-top: 60px;
-  padding-left: 145px;
+
+  text-align: center;
 }
 
 .footer-box ul {
@@ -78,7 +92,13 @@
 
 .footer-icon {
   padding: 0;
+  margin: 0;
   padding-left: 125px;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
 }
 
 .footer-subcribe-heading {
@@ -94,18 +114,22 @@
 
   padding: 0;
   margin: 0;
+  
 }
 
 .btn-footer {
-  min-width: 450px;
-  min-height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  padding-left: 16px;
-  margin-top: 20px;
-  border-radius: 4px;
-  color: #ffffff;
+    max-width: 450px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: rgba(255,255,255,0.6);
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25px;
 }
 
 .footer-action-img {
@@ -144,7 +168,7 @@
 }
 
 .contacts-font {
-  color: $font-third-color;
+  color: rgba(255,255,255,0.6);
   font-size: 14px;
 }
 
@@ -176,14 +200,29 @@ footer h2 {
   line-height: 0.875;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+  text-align: center;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .footer-contacts-item {
-  margin-bottom: 9px;
+    margin-bottom: 9px;
+
 }
+
+.foter-box-link {
+  display: inline-block;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+  
+}
+
+
 
 //   .footer-box-contact address {
 //     font-style: normal;
@@ -283,10 +322,9 @@ footer h2 {
 //   }
 // }
 
-// .footer-box-subscribe {
-//   display: block;
-//   align-items: baseline;
-// }
+.footer-box-subscribe {
+margin-top: 60px;
+}
 
 // .footer-subcribe-heading {
 //   font-family: "Roboto";

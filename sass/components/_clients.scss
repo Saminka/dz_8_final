@@ -4,6 +4,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  margin-top: 60px;
+  margin-bottom: 60px;
+  
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -19,8 +23,7 @@
 
 .clients-logo {
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
 .clients h2 {
@@ -41,35 +44,46 @@
   padding: 0;
   list-style: none;
   column-count: 2;
-  margin: 0;
-  padding: 0;
+    display: flex; 
+    align-items: center;  
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .clients-item {
-  margin-bottom: 30px;
-}
-
-.clients-icon {
-  background-position: center;
-  background-size: auto;
-
-  background-color: white;
-  fill: #afb1b8;
   width: 210px;
   height: 90px;
-  background-repeat: no-repeat;
+  
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+.clients-item:nth-child(-n+4) {
+    margin-bottom: 30px;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+.clients-item:nth-child(odd) {
+    margin-right: 30px;
+}
+}
+
+
+.clients-icon {
+  width: 210px;
+    height: 90px;
+  
+  fill: #afb1b8;
 
   border: 1px solid #afb1b8;
   border-width: 1px;
   border-radius: 4px;
-  padding-left: 83px;
-  padding-right: 83px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0px 30px 30px 0px;
+  
+display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .clients-icon:hover,

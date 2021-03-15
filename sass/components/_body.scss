@@ -18,7 +18,7 @@
 }
 
 body {
-  padding-top: 80px;
+  // padding-top: 80px;
   font-family: $font-main;
   font-style: normal;
 }
@@ -31,6 +31,7 @@ body img {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 h2,
