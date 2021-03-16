@@ -1085,6 +1085,9 @@ footer h2 {
 
 @media screen and (min-width: 1140px) {
   .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -1108,7 +1111,19 @@ footer h2 {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .advantages-item .item-one {
+    margin-right: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .advantages-item .item-three {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
   .advantages-item .item-three {
     margin-right: 30px;
   }
@@ -1257,7 +1272,7 @@ footer h2 {
 
 @media (min-width: 763px) {
   .hero-container {
-    width: 763px;
+    width: 100%;
   }
 }
 
@@ -1819,6 +1834,7 @@ form .modal-open-btn {
         -ms-flex-direction: row;
             flex-direction: row;
     background-color: transparent;
+    width: 100%;
     font-size: 14px;
     padding: 0;
   }
