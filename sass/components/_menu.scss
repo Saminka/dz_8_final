@@ -84,6 +84,7 @@
     flex-direction: row;
     background-color: transparent;
      font-size: 14px;
+     padding: 0;
 }
 
 .nav-list-mobile {
@@ -103,6 +104,9 @@
     @media screen and (min-width: 768px) {
       display: inline-flex;
     flex-direction: column-reverse;
+    width: 100%;
+    margin-left: 88px;
+    
     }
 }
 
@@ -120,6 +124,11 @@
 
 .nav-item:not(:last-child) {
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+    
+  }
 }
 
 .nav-item {
@@ -138,6 +147,10 @@
 .address-list {
   flex-direction: column;
   text-align: left;
+
+  @media screen and (min-width: 768px) {
+  flex-direction: column-reverse;
+  }
 }
 
 .contacts-mobile .contacts-font-first {
@@ -145,12 +158,20 @@
 font-size: 34px;
 line-height: 0.0025;
 letter-spacing: 0.02em;
+color: #757575;
 
 @media screen and (min-width: 768px) {
    font-size: 12px; 
+   
     
   }
 }
+
+.contacts-mobile .contacts-font-two {
+  @media screen and (min-width: 768px) {
+padding-bottom: 10px;
+  }}
+
 
 .contacts-mobile svg {
   @media screen and (max-width: 767px) {
@@ -161,4 +182,10 @@ letter-spacing: 0.02em;
 
 .contacts-mobile {
   margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+    margin-bottom: 0;
+    line-height: 14px;
+  }
 }}

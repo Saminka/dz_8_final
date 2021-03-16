@@ -3,11 +3,24 @@
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+   height: 80px; 
+   align-items: center;
+    
+  }
 }
 
-// .header-nav {
-//   border: 1px solid #ececec;
-// }
+.header-nav {
+  @media screen and (min-width: 1140px) {
+  border: 1px solid #ececec;
+}
+}
 
 .nav-list {
   list-style: none;
@@ -20,6 +33,9 @@ flex-wrap: wrap;
 
 @media screen and (min-width: 768px) {
   display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  transform: translateY(-50%)
 }
 
   
@@ -89,6 +105,7 @@ nav .link {
 
 
 .nav-underline {
+  display: block;
   position: relative;
   padding: 0;
 }
@@ -97,19 +114,26 @@ nav .link {
   content: " ";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -29px;
 
-  display: block;
+  
   width: 100%;
   height: 5px;
   background-color: $font-second-color;
   border-radius: 2px;
   opacity: 0;
+
+  bottom: 0;
+@media screen and (min-width: 1140px) {
+  display: block;
+}
 }
 
-// .nav-underline:after {
-//   opacity: 1;
-// }
+@media screen and (min-width: 768px) {
+.nav-underline:after {
+  opacity: 1;
+}
+}
 
 .email-icon {
   background-repeat: no-repeat;

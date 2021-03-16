@@ -12,9 +12,12 @@
     width: 763px;
   }
 
-  @media (min-width: 1600px) {
-    width: 1600px;
-  }
+  @media (min-width: 1140px) {
+  width: 696px;
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 0;
+}   
 }
 
 .hero h3 {
@@ -23,6 +26,7 @@
 }
 
 .hero h1 {
+  
   font-family: $font-main;
   font-style: normal;
   font-weight: 900;
@@ -32,8 +36,14 @@
   text-transform: uppercase;
   color: $font-color-light;
   margin: 0;
-  margin-bottom: 30px;
+  
   text-align: center;
+
+@media screen and (min-width: 768px) {
+  margin: 0 auto;
+  width: 360px;
+}
+
 }
 
 .hero {
@@ -69,6 +79,29 @@
       rgba(47, 48, 58, 0.5)
     ),
     url("../Images/hero_bcg_mobile.jpg");
+
+
+
+    @media screen and (min-width: 1140px) {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),
+    url("../Images/bcg-hero.jpg");
+
+  max-width: 1600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+} 
 }
 
 .modal-open-btn {
@@ -87,6 +120,16 @@
   border-color: transparent;
   cursor: pointer;
   text-align: center;
+      margin-top: 30px;
+}
+
+
+@media screen and (min-width: 1140px) {
+  .hero .btn-close:hover,
+.hero .btn-close:focus {
+  background-color: #ffffff;
+  fill: var(--font-second-color);
+}
 }
 
 // .hero h1 {

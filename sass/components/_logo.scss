@@ -7,8 +7,21 @@
   letter-spacing: 0.03em;
   color: black;
   // margin-right: 90px;
+
+ 
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding-bottom: 6px;
+  
+
+  @media screen and (min-width: 1140px)  {
+  margin-right: 90px;
+} 
+}
 }
 
 .logo-accent {
   color: $font-second-color;
 }
+
+

@@ -12,15 +12,25 @@
     width: 768px;
   }
 
-  @media (min-width: 1600px) {
-    width: 1600px;
+  @media (min-width: 1140px) {
+    width: 1200px;
   }
 }
 
 body {
-  // padding-top: 80px;
+  
   font-family: $font-main;
   font-style: normal;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 10px;
+  }
+@media screen and (min-width: 1140px) {
+margin: 0;
+  padding-top: 80px;
+  font-family: var(--font-main);
+  font-style: normal;
+}
 }
 
 body img {
@@ -46,4 +56,4 @@ h2 {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: $font-main-color;
-}
+  }

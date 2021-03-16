@@ -38,7 +38,7 @@ body img {
   padding: 0;
 }
 
-/* header {
+header {
   position: fixed;
   width: 100%;
   min-height: 80px;
@@ -51,13 +51,13 @@ body img {
 header .link-padding {
   padding: 32px 0;
   min-height: 80px;
-} */
+}
 
-/* .link-color {
+.link-color {
   color: var(--font-second-color);
-} */
+}
 
-/* .link-underline {
+ .link-underline {
   position: relative;
   padding: 0;
 }
@@ -78,7 +78,7 @@ header .link-padding {
 
 .link-underline:after {
   opacity: 1;
-} */
+} 
 
 /* .list-margin-style:not(:last-child) {
   margin-right: 50px;
@@ -342,7 +342,7 @@ form .modal-open-btn {
   text-decoration: none;
 } */
 
-/* h2,
+h2,
 h3,
 h4 {
   font-family: var(--font-main);
@@ -354,40 +354,40 @@ h2 {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--font-main-color);
-} */
+} 
 
-/* .footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   color: var(--font-second-color);
-} */
+}
 /* ===== /Общие настройки ===== */
 
 /* ===== Шапка сайта ===== */
 
-/* .header a .header a:visited {
+.header a .header a:visited {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--font-main-color);
-} */
+}
 
-/* .header .container {
+.header .container {
   display: flex;
   align-items: center;
-} */
+} 
 
-/* .header .navigation {
+ .header .navigation {
   display: flex;
   align-items: center;
-} */
+}
 
-/* .header-nav {
+.header-nav {
   border: 1px solid #ececec;
-} */
+}
 
-/* .header li a:hover,
+ .header li a:hover,
 .header a:active,
 .header a:focus {
   color: var(--font-second-color);
@@ -489,26 +489,26 @@ h2 {
   background-size: auto;
 } */
 
-/* .email-hover {
+ .email-hover {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
-} */
+} 
 
 /* .tel-hover {
   margin-right: 10px;
   fill: currentColor;
 } */
 
-/* .tel-icon {
+ .tel-icon {
   display: flex;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-} */
+} 
 
-/* .modal-open-btn {
+.modal-open-btn {
   width: 200px;
   height: 50px;
   font-family: var(--font-main);
@@ -524,9 +524,9 @@ h2 {
   border-color: transparent;
   cursor: pointer;
   text-align: center;
-} */
+}
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -536,9 +536,9 @@ h2 {
   opacity: 1;
 
   transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* .backdrop.is-hidden {
+ .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -566,7 +566,7 @@ h2 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-/* .btn-close {
+ .btn-close {
   display: flex;
   position: absolute;
   top: 8px;
@@ -588,7 +588,7 @@ h2 {
 .hero .btn-close:focus {
   background-color: #ffffff;
   fill: var(--font-second-color);
-} */
+} 
 
 /* .icon-checkbox:focus {
   outline: 1px solid var(--font-second-color);
@@ -1077,7 +1077,7 @@ button {
   color: var(--font-second-color);
 } */
 
-/* .footer address {
+.footer address {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1085,7 +1085,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--font-color-light);
   margin-bottom: 9px;
-} */
+}
 
 /* .footer {
   background-color: #2f303a;
@@ -1157,14 +1157,14 @@ button {
   color: white;
 } */
 
-/* .footer-box {
+.footer-box {
   display: flex;
   align-items: baseline;
-} */
+}
 
-/* .footer-box-contact {
+.footer-box-contact {
   margin-right: 70px;
-} */
+}
 
 /* .footer-icon{
   padding: 0;
